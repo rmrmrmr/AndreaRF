@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <section className="w-full flex flex-col justify-start items-center py-5 px-5 gap-4">
+    <section className="w-full flex flex-col justify-start items-center py-5 px-5 gap-4" id="about">
       <h2 className="text-5xl font-bold mb-2">About Me</h2>
       <Image
         src='/aboutMe.jpg'

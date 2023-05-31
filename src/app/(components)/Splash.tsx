@@ -3,18 +3,27 @@ import Link from "next/link";
 
 export default function Splash() {
   return (
-    <section className="w-full flex flex-col justify-start items-center py-5 px-5 gap-2">
-      <h1 className="text-7xl font-bold text-center leading-[60px]">
-        Andrea Ramírez Falcón
-      </h1>
-      <h2 className="text-4xl font-semibold bg-zinc-700 text-[#e6e0d3] px-5 py-1 rounded-full mb-2">Circus Artist</h2>
+    <section className="w-full flex flex-col sm:flex-row flex-wrap justify-start sm:justify-around items-center py-5 px-5 gap-2 sm:gap-0 max-w-6xl">
+      <div className="mb-2 flex flex-col items-end sm:w-1/3 text-center sm:text-right">
+        <h1 className="text-7xl sm:text-6xl font-bold leading-[60px]">
+          Andrea Ramírez Falcón
+        </h1>
+        <h2 className="text-4xl font-semibold bg-zinc-700 text-[#e6e0d3] px-5 py-1 rounded-full sm:mt-2">Circus Artist</h2>
+      </div>
       <div className="flex flex-col items-end">
         <Image
           src="/splash.png"
           alt="CyrWheel"
           width={400}
           height={420}
-          className="rounded-xl"
+          className="rounded-xl flex sm:hidden"
+        />
+        <Image
+          src="/splash.png"
+          alt="CyrWheel"
+          width={600}
+          height={420}
+          className="rounded-xl hidden sm:flex"
         />
         <p className="text-xs">
           Photo{" "}
@@ -23,7 +32,7 @@ export default function Splash() {
           </Link>
         </p>
       </div>
-      <h3 className="text-sm text-center px-5 font-sans italic font-medium mt-2">
+      <h3 className="text-sm sm:text-lg text-center px-5 sm:px-56 font-sans italic font-medium sm:font-normal mt-2 sm:mt-5 sm:w-full">
         Everyone continues to write the history of creation in their own way.
         What was previously unconscious, becomes visible.
       </h3>
