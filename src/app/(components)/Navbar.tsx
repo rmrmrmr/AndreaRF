@@ -12,38 +12,59 @@ export default function Navbar() {
           <p>|</p>
           <p>SP</p>
         </div>
-        <div className="flex gap-3">
-          <div className="group">
-            <Link
-              href="#about"
-              className="hover:bg-[#383427] hover:text-[#e6e0d3] py-1 px-3 rounded-full">
-              About
-            </Link>
+        <div className="flex">
+          <div className="group mr-3">
+            <div className="flex group-hover:bg-[#383427] group-hover:text-[#e6e0d3] items-center gap-2 rounded-full px-3 py-1">
+              <Link
+                href="#about"
+              >
+                About
+              </Link>
+            </div>
           </div>
-          <div className="group">
-            <Link
-              href="#work"
-              className="group-hover:bg-[#383427] group-hover:text-[#e6e0d3] hover:underline py-1 px-3 rounded-t-xl">
-              Work
-            </Link>
-            <div className="invisible absolute z-50 flex flex-col group-hover:visible text-[#e6e0d3] bg-[#383427] cursor-pointer">
-              <a className="my-2 block mx-4 hover:underline">
+          <div className="group mr-2">
+            <div className="flex group-hover:bg-[#383427] group-hover:text-[#e6e0d3] items-center gap-2 rounded-t-xl px-3 py-1">
+              <Link
+                href="#work"
+              >
+                Work
+              </Link>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="h-4 w-4">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div className="invisible absolute z-50 flex flex-col group-hover:visible text-[#e6e0d3] bg-[#383427] rounded-b-xl rounded-tr-md cursor-pointer">
+              <Link href="#work" className="my-2 block mx-4 hover:underline">
                 Personal
-              </a>
-              <a className="my-2 block mx-4 hover:underline">
+              </Link>
+              <Link href="#work" className="my-2 block mx-4 hover:underline">
                 Collaborations
-              </a>
-              <a className="my-2 block mx-4 hover:underline">
+              </Link>
+              <Link href="#work" className="my-2 block mx-4 hover:underline">
                 Writings
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group">
-            <Link
-              href="#contact"
-              className="hover:bg-[#383427] hover:text-[#e6e0d3] py-1 px-3 rounded-full">
-              Contact
-            </Link>
+            <div className="flex group-hover:bg-[#383427] group-hover:text-[#e6e0d3] items-center gap-2 rounded-full px-3 py-1">
+              <Link
+                href="#contact"
+              >
+                Contact
+              </Link> 
+            </div>
           </div>
         </div>
       </div>
