@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Splash() {
   return (
-    <section className="w-full flex flex-col sm:flex-row flex-wrap justify-start sm:justify-center items-center py-5 px-5 gap-2 lg:gap-x-10 max-w-6xl">
-      <div className="mb-2 flex flex-col items-center sm:items-end sm:w-1/3 text-center sm:text-right">
+    <section className="w-full flex flex-col sm:flex-row flex-wrap justify-start sm:justify-around items-center py-5 px-5 gap-2 lg:gap-x-10 max-w-6xl">
+      <div className="mb-2 flex flex-col items-center sm:items-end sm:w-min text-center sm:text-right">
         <h1 className="text-7xl sm:text-6xl font-bold leading-[60px]">
           Andrea Ramírez Falcón
         </h1>
@@ -16,7 +16,7 @@ export default function Splash() {
           alt="CyrWheel"
           width={716}
           height={420}
-          className="rounded-xl w-[400px] sm:w-[450px] lg:w-[600px]"
+          className="rounded-xl w-[400px] sm:w-[450px] lg:w-[716px]"
         />
         <p className="text-xs">
           Photo{" "}
