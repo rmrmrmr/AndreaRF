@@ -16,7 +16,7 @@ export default function Splash() {
           alt="CyrWheel"
           width={716}
           height={420}
-          className="rounded-xl w-[400px] sm:w-[450px] lg:w-[716px]"
+          className="rounded-xl w-[400px] sm:w-[450px] lg:w-[650px]"
         />
         <p className="text-xs">
           Photo{" "}
