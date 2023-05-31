@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="w-full flex flex-col justify-start items-center pt-5 pb-2 px-5 gap-4" id="contact">
+    <section className="w-full flex flex-col justify-start items-center pt-5 pb-2 px-5 gap-4 max-w-6xl" id="contact">
       <h2 className="text-5xl font-bold mb-2">Get in touch</h2>
-      <form action="https://formspree.io/f/moqbvdgn" method="POST" className="bg-transparent flex flex-col w-full px-2 gap-5 font-sans items-center">
+      <form action="https://formspree.io/f/moqbvdgn" method="POST" className="bg-transparent flex flex-col w-full px-2 gap-5 font-sans items-center lg:w-3/5 lg:mt-5">
         <input type="text" name="nameInput" placeholder="Your name" className="bg-transparent outline-none w-full placeholder-gray-600 border-b-2 border-black"/>
         <input type="text" name="emailInput"placeholder="Your email" className="bg-transparent outline-none w-full placeholder-gray-600 border-b-2 border-black"/>
         <textarea name="messageInput" id="" cols={10} rows={1} placeholder="Leave a message!" className="bg-transparent outline-none w-full resize-none placeholder-gray-600 border-b-2 border-black"></textarea>
