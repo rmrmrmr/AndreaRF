@@ -27,25 +27,31 @@ export default function Splash() {
         Everyone continues to write the history of creation in their own way.
         What was previously unconscious, becomes visible.
       </h3>
-      <div className="flex gap-3 mt-3">
-        <Image
-          src='/instagram.svg'
-          alt="instagram"
-          width={25}
-          height={25}
-        />
-        <Image
-          src='/youtube.svg'
-          alt="instagram"
-          width={25}
-          height={25}
-        />
-        <Image
-          src='/linkedin.svg'
-          alt="instagram"
-          width={25}
-          height={25}
-        />
+      <div className="flex gap-3 mt-3 items-center">
+        <Link href='https://www.instagram.com/anndrearf_/'>
+          <Image
+            src='/instagram.svg'
+            alt="Instagram"
+            width={25}
+            height={25}
+          />
+        </Link>
+        <Link href='https://www.linkedin.com/in/andrea-ram%C3%ADrez-falc%C3%B3n-505378207/'>
+          <Image
+            src='/youtube.svg'
+            alt="YouTube"
+            width={30}
+            height={30}
+          />
+        </Link>
+        <Link href='https://www.youtube.com/channel/UClIYEaYRJ0AKhXOirmVSBKg'>
+          <Image
+            src='/linkedin.svg'
+            alt="LinkedIn"
+            width={25}
+            height={25}
+          />
+        </Link>
       </div>
     </section>
   );

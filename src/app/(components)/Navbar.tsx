@@ -4,7 +4,7 @@ export default function Navbar() {
       {/* desktop navbar */}
       <div className="hidden sm:flex">desktop navbar</div>
       {/* mobile navbar */}
-      <div className="shadow-md h-14 w-full">
+      <div className="shadow-md h-12 w-full">
       </div>
     </nav>
   )
