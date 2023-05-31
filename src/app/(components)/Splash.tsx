@@ -3,27 +3,20 @@ import Link from "next/link";
 
 export default function Splash() {
   return (
-    <section className="w-full flex flex-col sm:flex-row flex-wrap justify-start sm:justify-around items-center py-5 px-5 gap-2 sm:gap-0 max-w-6xl">
-      <div className="mb-2 flex flex-col items-end sm:w-1/3 text-center sm:text-right">
+    <section className="w-full flex flex-col sm:flex-row flex-wrap justify-start sm:justify-center items-center py-5 px-5 gap-2 lg:gap-x-10 max-w-6xl">
+      <div className="mb-2 flex flex-col items-center sm:items-end sm:w-1/3 text-center sm:text-right">
         <h1 className="text-7xl sm:text-6xl font-bold leading-[60px]">
           Andrea Ramírez Falcón
         </h1>
-        <h2 className="text-4xl font-semibold bg-zinc-700 text-[#e6e0d3] px-5 py-1 rounded-full sm:mt-2">Circus Artist</h2>
+        <h2 className="text-3xl font-semibold bg-zinc-700 text-[#e6e0d3] px-5 py-1 rounded-full sm:mt-2">Circus Artist</h2>
       </div>
       <div className="flex flex-col items-end">
         <Image
           src="/splash.png"
           alt="CyrWheel"
-          width={400}
+          width={716}
           height={420}
-          className="rounded-xl flex sm:hidden"
-        />
-        <Image
-          src="/splash.png"
-          alt="CyrWheel"
-          width={600}
-          height={420}
-          className="rounded-xl hidden sm:flex"
+          className="rounded-xl w-[400px] sm:w-[450px] lg:w-[600px]"
         />
         <p className="text-xs">
           Photo{" "}
@@ -32,7 +25,7 @@ export default function Splash() {
           </Link>
         </p>
       </div>
-      <h3 className="text-sm sm:text-lg text-center px-5 sm:px-56 font-sans italic font-medium sm:font-normal mt-2 sm:mt-5 sm:w-full">
+      <h3 className="text-sm sm:text-base lg:text-lg text-center px-5 sm:px-35 lg:px-56 font-sans italic font-medium sm:font-normal mt-2 sm:mt-0 lg:mt-5 sm:w-full">
         Everyone continues to write the history of creation in their own way.
         What was previously unconscious, becomes visible.
       </h3>
