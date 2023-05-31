@@ -32,24 +32,24 @@ export default function Splash() {
           <Image
             src='/instagram.svg'
             alt="Instagram"
-            width={25}
-            height={25}
+            width={20}
+            height={20}
           />
         </Link>
         <Link href='https://www.linkedin.com/in/andrea-ram%C3%ADrez-falc%C3%B3n-505378207/'>
           <Image
             src='/youtube.svg'
             alt="YouTube"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </Link>
         <Link href='https://www.youtube.com/channel/UClIYEaYRJ0AKhXOirmVSBKg'>
           <Image
             src='/linkedin.svg'
             alt="LinkedIn"
-            width={25}
-            height={25}
+            width={20}
+            height={20}
           />
         </Link>
       </div>
