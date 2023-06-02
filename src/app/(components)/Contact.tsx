@@ -20,7 +20,7 @@ export default function Contact() {
             height={20}
           />
         </Link>
-        <Link href='https://www.linkedin.com/in/andrea-ram%C3%ADrez-falc%C3%B3n-505378207/'>
+        <Link href='https://www.youtube.com/channel/UClIYEaYRJ0AKhXOirmVSBKg'>
           <Image
             src='/youtube.svg'
             alt="YouTube"
@@ -28,7 +28,7 @@ export default function Contact() {
             height={25}
           />
         </Link>
-        <Link href='https://www.youtube.com/channel/UClIYEaYRJ0AKhXOirmVSBKg'>
+        <Link href='https://www.linkedin.com/in/andrea-ram%C3%ADrez-falc%C3%B3n-505378207/'>
           <Image
             src='/linkedin.svg'
             alt="LinkedIn"
