@@ -1,16 +1,20 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
 
 export default function Navbar() {
+  const t = useTranslations('Splash');
+
   return (
     <nav className="w-full flex justify-center shadow-md">
       {/* desktop navbar */}
       <div className="hidden sm:flex h-14 font-sans items-center justify-between w-full max-w-6xl font-normal text-lg px-8">
         <div className="flex gap-4">
-          <p>EN</p>
+          <Link href="/en">EN</Link>
           <p>|</p>
-          <p>FR</p>
+          <Link href="/es">ES</Link>
           <p>|</p>
-          <p>SP</p>
+          <Link href="/fr">FR</Link>
         </div>
         <div className="flex">
           <div className="group mr-3">
@@ -18,7 +22,7 @@ export default function Navbar() {
               <Link
                 href="#about"
               >
-                About
+                {t('navAbout')}
               </Link>
             </div>
           </div>
@@ -27,7 +31,7 @@ export default function Navbar() {
               <Link
                 href="#work"
               >
-                Work
+                {t('navWork')}
               </Link>
               <span>
                 <svg
@@ -47,13 +51,13 @@ export default function Navbar() {
             </div>
             <div className="invisible absolute z-50 flex flex-col group-hover:visible text-[#e6e0d3] bg-[#383427] rounded-b-xl rounded-tr-md cursor-pointer">
               <Link href="#work" className="my-2 block mx-4 hover:underline">
-                Personal
+                {t('navPersonal')}
               </Link>
               <Link href="#work" className="my-2 block mx-4 hover:underline">
-                Collaborations
+                {t('navCollabs')}
               </Link>
               <Link href="#work" className="my-2 block mx-4 hover:underline">
-                Writings
+                {t('navWritings')}
               </Link>
             </div>
           </div>
@@ -62,7 +66,7 @@ export default function Navbar() {
               <Link
                 href="#contact"
               >
-                Contact
+                {t('navContact')}
               </Link> 
             </div>
           </div>
