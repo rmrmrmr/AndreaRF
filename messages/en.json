@@ -13,6 +13,8 @@
     "enviar": "Send",
     "namePH": "Your name",
     "emailPH": "Your email",
-    "descriptPH": "Leave a message"
+    "descriptPH": "Leave a message",
+    "seeMoreBttn": "See more",
+    "visitProjectBttn": "Visit Project"
   }
 }

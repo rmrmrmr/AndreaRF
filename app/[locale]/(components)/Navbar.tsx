@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-
 export default function Navbar() {
   const t = useTranslations('Splash');
 
@@ -10,11 +9,11 @@ export default function Navbar() {
       {/* desktop navbar */}
       <div className="hidden sm:flex h-14 font-sans items-center justify-between w-full max-w-6xl font-normal text-lg px-8">
         <div className="flex gap-4">
-          <Link href="/en">EN</Link>
+          <Link href="/en" className="hover:underline">EN</Link>
           <p>|</p>
-          <Link href="/es">ES</Link>
+          <Link href="/es" className="hover:underline">ES</Link>
           <p>|</p>
-          <Link href="/fr">FR</Link>
+          <Link href="/fr" className="hover:underline">FR</Link>
         </div>
         <div className="flex">
           <div className="group mr-3">
@@ -50,13 +49,13 @@ export default function Navbar() {
               </span>
             </div>
             <div className="invisible absolute z-50 flex flex-col group-hover:visible text-[#e6e0d3] bg-[#383427] rounded-b-xl rounded-tr-md cursor-pointer">
-              <Link href="#work" className="my-2 block mx-4 hover:underline">
+              <Link href="/personal-projects" className="my-2 block mx-4 hover:underline">
                 {t('navPersonal')}
               </Link>
-              <Link href="#work" className="my-2 block mx-4 hover:underline">
+              <Link href="/collabs" className="my-2 block mx-4 hover:underline">
                 {t('navCollabs')}
               </Link>
-              <Link href="#work" className="my-2 block mx-4 hover:underline">
+              <Link href="/writings" className="my-2 block mx-4 hover:underline">
                 {t('navWritings')}
               </Link>
             </div>
