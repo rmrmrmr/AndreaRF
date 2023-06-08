@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-export default function Navbar() {
+export default function CollabsNavbar() {
   const t = useTranslations("Splash");
 
   return (
@@ -9,11 +9,11 @@ export default function Navbar() {
       {/* desktop navbar */}
       <div className="hidden sm:flex h-14 font-sans items-center justify-between w-full max-w-6xl font-normal text-lg px-8">
         <div className="flex gap-4">
-          <Link href="/en" className="hover:underline">EN</Link>
+          <Link href="/en/collabs" className="hover:underline">EN</Link>
           <p>|</p>
-          <Link href="/es" className="hover:underline">ES</Link>
+          <Link href="/es/collabs" className="hover:underline">ES</Link>
           <p>|</p>
-          <Link href="/fr" className="hover:underline">FR</Link>
+          <Link href="/fr/collabs" className="hover:underline">FR</Link>
         </div>
         <div className="flex">
           <Link
